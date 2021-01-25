@@ -54,7 +54,7 @@ class JasperServer:
 
     def error(self, message):
         if self.logger:
-            self.logger.error("%s" % message)
+            self.logger.error(u"%s" % message)
 
     def path(self):
         return os.path.abspath(os.path.dirname(__file__))
